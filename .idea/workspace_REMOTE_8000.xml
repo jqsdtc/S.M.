@@ -101,11 +101,6 @@
       <file leaf-file-name="IndentBean.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JavaBean/IndentBean.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="0.47119644">
-              <caret line="221" column="16" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="16" />
-              <folding />
-=======
             <state vertical-scroll-proportion="0.36563876">
               <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
@@ -152,7 +147,6 @@
                 <element signature="e#542#543#0" expanded="true" />
                 <element signature="e#580#581#0" expanded="true" />
               </folding>
->>>>>>> cf88237ef210d15b50636aa927b9a58349fa9342
             </state>
           </provider>
         </entry>
@@ -903,21 +897,13 @@
       <updated>1468398005100</updated>
       <workItem from="1468398009613" duration="10775000" />
       <workItem from="1468810968181" duration="61000" />
-<<<<<<< HEAD
-      <workItem from="1468850258307" duration="713000" />
-=======
       <workItem from="1468850258307" duration="90000" />
       <workItem from="1468859603509" duration="1206000" />
->>>>>>> cf88237ef210d15b50636aa927b9a58349fa9342
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="11549000" />
-=======
     <option name="totallyTimeSpent" value="12132000" />
->>>>>>> cf88237ef210d15b50636aa927b9a58349fa9342
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -1004,13 +990,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/CSS/temp.css">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.47119644">
-          <caret line="221" column="16" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="16" />
-=======
         <state vertical-scroll-proportion="0.7139614">
           <caret line="227" column="20" selection-start-line="227" selection-start-column="20" selection-end-line="227" selection-end-column="20" />
->>>>>>> cf88237ef210d15b50636aa927b9a58349fa9342
           <folding />
         </state>
       </provider>
