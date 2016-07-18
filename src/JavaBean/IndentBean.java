@@ -9,9 +9,15 @@ package JavaBean;
 public class IndentBean {
     private int id;
     private int uid;
-    private int mid;
+    private int cid;
     private String date;
     private int quantity;
+
+    public final short ID = 1;
+    public final short UID = 2;
+    public final short CID = 3;
+    public final short DATE = 4;
+    public final short QUANTITY = 5;
 
     public int getId() {
         return id;
@@ -30,11 +36,11 @@ public class IndentBean {
     }
 
     public int getMid() {
-        return mid;
+        return cid;
     }
 
     public void setMid(int mid) {
-        this.mid = mid;
+        this.cid = mid;
     }
 
     public String getDate() {

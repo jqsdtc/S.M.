@@ -11,6 +11,18 @@ public class CargoBean {
     private String cargoname;
     private int inventory;
     private float price;
+    private short sort;
+
+    public final short ID = 1;
+    public final short CARGONAME = 2;
+    public final short INVENTORY = 3;
+    public final short PRICE = 4;
+    public final short SORT = 5;
+
+    public final short SHOE = 6;
+    public final short CLOTHES = 7;
+    public final short ORNAMENT = 8;
+    public final short TOY = 9;
 
     public int getId() {
         return id;
@@ -42,5 +54,13 @@ public class CargoBean {
 
     public void setPrice(float price) {
         this.price = price;
+    }
+
+    public short getSort() {
+        return sort;
+    }
+
+    public void setSort(short sort) {
+        this.sort = sort;
     }
 }
