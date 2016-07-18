@@ -6,7 +6,9 @@
     <link href="../CSS/bootstrap.min.css" rel="stylesheet">
     <script src="../js/jquery-3.1.0.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <link href="../CSS/temp.css" rel="stylesheet">
+    <script src="../js/changeColor.js"></script>
+    <link href="../CSS/myCount.css" rel="stylesheet">
+    <link href="../CSS/common.css" rel="stylesheet">
     <title>myCount</title>
 
 </head>
@@ -43,14 +45,15 @@
       <div class="custom-list">
         <h2>我的账户</h2>
         <ul class="myTab">
-          <li><a href="#info" data-toggle="tab">注册详细信息</a></li>
+          <li class="active"><a class="on" href="#info" data-toggle="tab">个人信息</a></li>
           <li><a href="#list" data-toggle="tab">我的订单</a></li>
-          <li><a href="#address" data-toggle="tab">地址簿</a></li>
+          <li><a href="#address" data-toggle="tab">购买记录</a></li>
         </ul>
       </div>
-      <div>
-        <div>
+      <div class="custom-body">
+        <div class="custom-head">
           <p name="name">欢迎，</p>
+          <button name="quit" value="退出"><a href="./home.html">退出</a></button>
         </div>
         <div class="tab-content">
           <div class="tab-pane fade in active" id="info">jflksjf</div>
