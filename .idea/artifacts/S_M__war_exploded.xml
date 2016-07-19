@@ -1,11 +1,15 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="S.M.:war exploded">
+  <artifact type="war" name="S.M.:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/S_M__war_exploded</output-path>
-    <root id="root">
+    <root id="archive" name="S.M._war exploded.war">
       <element id="javaee-facet-resources" facet="S.M./web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="S.M." />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mysql-connector-java-5.1.39-bin" />
+          <element id="library" level="project" name="servlet-api" />
         </element>
       </element>
     </root>

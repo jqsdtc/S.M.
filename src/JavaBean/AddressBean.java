@@ -8,8 +8,12 @@ package JavaBean;
  */
 public class AddressBean {
     private int id;
-    private int Uid;
+    private int uid;
     private String address;
+
+    public final short ID = 1;
+    public final short UID = 2;
+    public final short ADDRESS = 3;
 
     public int getId() {
         return id;
@@ -20,11 +24,11 @@ public class AddressBean {
     }
 
     public int getUid() {
-        return Uid;
+        return uid;
     }
 
     public void setUid(int uid) {
-        Uid = uid;
+        this.uid = uid;
     }
 
     public String getAddress() {
