@@ -6,11 +6,6 @@
 #tool-content div.tool-list{
 	float: left;
 	width: 15%;
-	background-color: #3b312f;
+	background-color: #fff;
 	opacity: 0.9;
-}
-
-#tool-content div.tool-body{
-	float: right;
-	width: 85%;
 }
