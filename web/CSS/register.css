@@ -1,5 +1,5 @@
 #register-head {
-    height: 300px;
+    height: 350px;
     background-color: #2b2b2b;
     overflow: auto;
     color: #fff;
@@ -12,7 +12,7 @@
 }
 
 #register-head ul li{
-    line-height: 50px;
+    line-height: 40px;
     margin-left: 40px;
     float: left;
     list-style-type: none;

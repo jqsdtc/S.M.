@@ -1,0 +1,109 @@
+#login-head {
+    height: 340px;
+    background-color: #2b2b2b;
+    overflow: auto;
+    color: #fff;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+#login-head h4{
+    line-height: 50px;
+}
+
+#login-head ul li{
+    line-height: 50px;
+    margin-left: 40px;
+    float: left;
+    list-style-type: none;
+    width: 300px;
+    text-align: center;
+}
+
+div{
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+#login-content{
+    margin-top: 60px;
+    margin-left: 270px;
+    float: left;
+}
+
+#login-content div{
+    color: #6f6f6f;
+    width: 300px;
+    padding-top: 45px;
+    padding-left: 30px;
+}
+
+#login-content div input{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+#login-content div button{
+    margin-left: 75px;
+    margin-top: 10px;
+    font-size: 17px;
+    width: 50px;
+    color: #fff;
+    background-color: #2b2b2b;
+    border:none;
+}
+
+#login-content div button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#login-content div p{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#login-content div p a{
+    color: #1a1a1a;
+    text-decoration: underline #1a1a1a;
+}
+
+#register-content{
+    width: 300px;
+    margin-right: 420px;
+    margin-top: 60px;
+    float: right;
+}
+
+#register-content div{
+    padding-top: 45px;
+    padding-left: 30px;
+    color: #6f6f6f;
+    width: 300px;
+}
+
+#register-content div p{
+    margin-bottom: 40px;
+}
+
+#register-content div input{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#register-content div button{
+    margin-top: 20px;
+    margin-left: 80px;
+    font-size: 17px;
+    width: 50px;
+    color: #fff;
+    background-color: #2b2b2b;
+    border:none;
+}
+
+#register-content div button a{
+    color: #fff;
+    text-decoration: none;
+}

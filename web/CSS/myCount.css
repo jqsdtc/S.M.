@@ -4,20 +4,42 @@
 }
 
 #custom-content div.custom-list{
-    color: #fff;
     float: left;
-    width: 13%;
+    width: 15%;
     padding-left: 50px;
-    padding-top: 30px;
+    padding-top: 35px;
     background-color: #000;
     height: 800px;
     opacity: 0.7;
     filter:alpha(opacity=70);
 }
 
+#custom-content div.custom-list p{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+#custom-content div.custom-list ul li{
+    padding-left: 20px;
+    font-size: 18px;
+    list-style-type: none;
+    line-height: 70px;
+}
+
+#custom-content div.custom-list ul li a{
+    color: #bcb7b7;
+    text-decoration: none;
+}
+
+#custom-content div.custom-list ul li .on{
+    color: #fff;
+}
+
+
 #custom-content div.custom-body{
     float: right;
-    width: 87%;
+    width: 85%;
     height: 800px;
 }
 
@@ -47,20 +69,54 @@
 
 #custom-content div .custom-head button a{
     color: #fff;
-}
-
-#custom-content div.custom-list ul li{
-    font-size: 15px;
-    list-style-type: none;
-    line-height: 50px;
-}
-
-#custom-content div.custom-list ul li a{
-    color: #bcb7b7;
     text-decoration: none;
 }
 
-#custom-content div.custom-list ul li .on{
-    color: #fff;
+#custom-content div .custom-head button a:hover{
+    color: red;
 }
 
+#custom-content div .tab-content div{
+    padding-top: 80px;
+    padding-left: 110px;
+}
+
+#custom-content div .tab-content div p{
+    font-size: 25px;
+    padding-bottom: 60px;
+}
+
+#custom-content div .tab-content div ul li{
+    padding-left: 40px;
+    font-size: 20px;
+    list-style: none;
+    line-height: 65px;
+}
+
+#custom-content div .tab-content div ul li a{
+    color: #7e7e7e;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#custom-content div .tab-content div ul li a:hover{
+    color: red;
+}
+
+#custom-content div .tab-content div button{
+    background-color: #2b2b2b;
+    line-height: 32px;
+    margin-top: 45px;
+    margin-left: 20px;
+    width: 100px;
+    border:none;
+}
+
+#custom-content div .tab-content div button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#custom-content div .tab-content div button a:hover{
+    color: red;
+}

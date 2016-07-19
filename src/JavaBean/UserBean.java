@@ -11,9 +11,21 @@ public class UserBean {
     private String username;
     private String password;
     private boolean authority;
+    private String realname;
     private String phonenum;
     private String email;
     private int integral;
+    private String info;
+    private boolean state;
+
+    public final short ID = 1;
+    public final short USERNAME = 2;
+    public final short PASSWORD = 3;
+    public final short AUTHORITY = 4;
+    public final short REALNAME = 5;
+    public final short PHONENUM = 6;
+    public final short EMAIL = 7;
+    public final short INTEGRAL = 8;
 
     public int getId() {
         return id;
@@ -47,6 +59,14 @@ public class UserBean {
         this.authority = authority;
     }
 
+    public String getRealname() {
+        return realname;
+    }
+
+    public void setRealname(String realname) {
+        this.realname = realname;
+    }
+
     public String getPhonenum() {
         return phonenum;
     }
@@ -69,5 +89,21 @@ public class UserBean {
 
     public void setIntegral(int integral) {
         this.integral = integral;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
+    public boolean isState() {
+        return state;
+    }
+
+    public void setState(boolean state) {
+        this.state = state;
     }
 }
