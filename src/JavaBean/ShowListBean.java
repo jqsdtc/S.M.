@@ -2,6 +2,8 @@ package JavaBean;
 
 import com.sun.rowset.CachedRowSetImpl;
 
+import java.util.List;
+
 /**
  * @Author: michael
  * @Date: 16-7-19 上午3:43
@@ -14,6 +16,7 @@ public class ShowListBean {
     private int pageAllCount = 0;
     private int showPage = 1;
     private StringBuffer presentPageResult;
+    private List beanSet;
 
     public CachedRowSetImpl getRowSet() {
         return rowSet;
@@ -53,5 +56,13 @@ public class ShowListBean {
 
     public void setPresentPageResult(StringBuffer presentPageResult) {
         this.presentPageResult = presentPageResult;
+    }
+
+    public List getBeanSet() {
+        return beanSet;
+    }
+
+    public void setBeanSet(List beanSet) {
+        this.beanSet = beanSet;
     }
 }

@@ -35,12 +35,12 @@ public class IndentBean {
         this.uid = uid;
     }
 
-    public int getMid() {
+    public int getCid() {
         return cid;
     }
 
-    public void setMid(int mid) {
-        this.cid = mid;
+    public void setCid(int mid) {
+        this.cid = cid;
     }
 
     public String getDate() {
