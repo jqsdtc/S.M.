@@ -3,63 +3,79 @@
 	overflow: auto;
 }
 
-#tool-content div.tool-list{
+#tool-content .tabbedpanels{
 	float: left;
-	padding-top: 100px;
 	overflow: auto;
 	width: 15%;
 	background-color: #3b312f;
 	height: 1000px;
 }
 
-#tool-content div.tool-list ul li{
+#tool-content .tabbedpanels img{
+	margin-top: 20px;
+	margin-left: 25px;	
+}
+
+#tool-content .tabbedpanels p{
+	color: #fff;
 	text-align: center;
-	font-size: 20px;
+	font-size: 17px;
+	margin-bottom: 80px;
+}
+
+#tool-content .tabbedpanels ul li{
+	height: 60px;
+	line-height: 60px;
+	padding-left: 60px;
+	font-size: 18px;
 	margin-top: 10px;
 }
 
-#tool-content div.tool-list ul .on{
+#tool-content .tabbedpanels ul .on{
 	background-color: #554d4a;
 }
 
-#tool-content div.tool-list ul li a{
+#tool-content .tabbedpanels ul li a{
 	color: #fff;
 	text-decoration: none;
 }
 
-#tool-content div.tool-body{
+#tool-content .tabbedpanels ul li .active{
+	color: red;
+}
+
+#tool-content .panelContainer{
 	overflow: auto;
 	float: right;
 	width: 85%;
 }
 
-#tool-content .tool-body .tool-head{
+#tool-content .panelContainer .tool-head{
 	height: 60px;
 	padding-top: 20px;
-	padding-left: 40px;
+	padding-left: 20px;
 	color: #3b312f;
-	font-size: 20px;
+	font-size: 18px;
 	border-bottom: 2px #3b312f solid; 
 }
-
-#tool-content .tool-body .tool-head input{
+"
+#tool-content .panelContainer .tool-head input{
 	margin-left: 20px;
 }
 
-#tool-content .tool-body .fade{
-	background-color: #000;
+#tool-content .panelContainer .panel{
 	margin-top: 10px;
 }
 
-#tool-content .tool-body .fade .tools div{
+#tool-content .panelContainer .panel .tools div{
 	width: 350px;
-	margin-right: 8px;
+	margin-right: 25px;
 	float: left;
 	background-color: #e8e8e8;
 	margin-bottom: 50px;
 }
 
-#tool-content div.tool-body .fade .tools div p{
+#tool-content .panelContainer .panel .tools div p{
 	text-align: center;
 	margin-top: 20px;
 }

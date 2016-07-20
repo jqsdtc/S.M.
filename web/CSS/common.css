@@ -18,9 +18,18 @@ body {
     height:100%;
 }
 
+.block{
+    height: 101px;
+    width: 100px;
+}
+
 .nav-bar {
-    height: 51px;
+    position: fixed;
+    height: 52px;
     overflow: auto;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px #000 solid;
 }
 
 #nav-tabs {
@@ -34,7 +43,6 @@ body {
     text-align: center;
     border-left: 2px #C4C4C4 solid;
     list-style-type:none;
-    background-color: #fff;
     float: right;
 }
 
@@ -64,6 +72,10 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    top: 52px;
+    width: 100%;
+    height: 30px;
     border-radius: 0px;
     background-color: #1a1a1a;
     margin: 0;
