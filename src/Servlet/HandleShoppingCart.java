@@ -23,8 +23,10 @@ import java.util.ArrayList;
 @WebServlet(name = "HandleShoppingCart")
 public class HandleShoppingCart extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
         CargoBean cargoBean = (CargoBean) request.getSession().getAttribute("cargoBean");
         IndentBean indentBean = (IndentBean) request.getSession().getAttribute("indentBean");
+        int quantity = Integer.parseInt(request.getParameter("quantity").trim());
         ArrayList<CargoBean> indentUnitBeanList = indentBean.getIndentUnitBeanList();
         float priceAllCount = indentBean.getPriceAllCount();
         if (indentBean == null) {
@@ -32,6 +34,7 @@ public class HandleShoppingCart extends HttpServlet {
             request.getSession().setAttribute("indentBean", indentBean);
             indentUnitBeanList = new ArrayList<CargoBean>();
             priceAllCount = 0;
+            indentBean.setEmpty(true);
         }
         InfoBean infoBean = (InfoBean) request.getSession().getAttribute("infoBean");
         if (infoBean == null) {
@@ -43,10 +46,12 @@ public class HandleShoppingCart extends HttpServlet {
             infoBean.setInfo("");
         }
         else {
+            cargoBean.setQuantity(quantity);
             indentUnitBeanList.add(cargoBean);
             priceAllCount += cargoBean.getPrice();
             indentBean.setIndentUnitBeanList(indentUnitBeanList);
             indentBean.setPriceAllCount(priceAllCount);
+            indentBean.setEmpty(false);
             infoBean.setInfo("");
         }
         forward = "";

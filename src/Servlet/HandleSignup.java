@@ -36,7 +36,7 @@ public class HandleSignup extends HttpServlet {
 
         try {
             SQLConnector connector = new SQLConnector();
-            String sql = "INSERT INTO user(user_name,password,realname,user_Email,real_name) VALUES('"+username+"','"+password+"','"+realname+"','"+email+"','"+phonenum+"')";
+            String sql = "INSERT INTO user(username,password,realname,email,phonenum) VALUES('"+username+"','"+password+"','"+realname+"','"+email+"','"+phonenum+"')";
             connector.update(sql);
             forward = "index.jsp";
 

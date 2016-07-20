@@ -11,6 +11,7 @@ import java.util.ArrayList;
 public class IndentBean {
     ArrayList<CargoBean> indentUnitBeanList = null;
     float priceAllCount;
+    boolean empty;
 
     public float getPriceAllCount() {
         return priceAllCount;
@@ -26,5 +27,13 @@ public class IndentBean {
 
     public void setIndentUnitBeanList(ArrayList<CargoBean> indentUnitBeanList) {
         this.indentUnitBeanList = indentUnitBeanList;
+    }
+
+    public boolean isEmpty() {
+        return empty;
+    }
+
+    public void setEmpty(boolean empty) {
+        this.empty = empty;
     }
 }

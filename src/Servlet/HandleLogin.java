@@ -25,8 +25,8 @@ import java.sql.SQLException;
 public class HandleLogin extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
+        String username = request.getParameter("username").trim();
+        String password = request.getParameter("password").trim();
         String forward;
         UserBean userBean = new UserBean();
         InfoBean infoBean = new InfoBean();
@@ -35,7 +35,7 @@ public class HandleLogin extends HttpServlet {
 
         try {
             SQLConnector connector = new SQLConnector();
-            String sql = "select * from user where user_name='"+
+            String sql = "select * from user where username='"+
                     username+"' and password='"+password+"'";
             ResultSet resultSet = connector.qurey(sql);
             if (resultSet.next()) {
