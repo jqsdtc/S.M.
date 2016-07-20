@@ -1,5 +1,6 @@
 package Servlet;
 
+import JavaBean.InfoBean;
 import JavaBean.UserBean;
 import Util.SQLConnector;
 
@@ -28,7 +29,9 @@ public class HandleSignup extends HttpServlet {
         String email = request.getParameter("email").trim();
         String phonenum = request.getParameter("phonenum").trim();
         UserBean userBean = new UserBean();
+        InfoBean infoBean = new InfoBean();
         request.getSession().setAttribute("userBean",userBean);
+        request.getSession().setAttribute("infoBean", infoBean);
         String forward;
 
         try {
@@ -43,7 +46,7 @@ public class HandleSignup extends HttpServlet {
             userBean.setEmail(email);
             userBean.setPhonenum(phonenum);
         } catch (SQLException e) {
-            userBean.setInfo("此用户名已被使用，请更改。");
+            infoBean.setInfo("此用户名已被使用，请更改。");
             forward = "register.jsp";
             e.printStackTrace();
         }

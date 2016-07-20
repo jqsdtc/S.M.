@@ -1,5 +1,6 @@
 package Servlet;
 
+import JavaBean.InfoBean;
 import JavaBean.UserBean;
 import Util.SQLConnector;
 
@@ -28,7 +29,9 @@ public class HandleLogin extends HttpServlet {
         String password = request.getParameter("password");
         String forward;
         UserBean userBean = new UserBean();
+        InfoBean infoBean = new InfoBean();
         request.getSession().setAttribute("userBean", userBean);
+        request.getSession().setAttribute("infoBean", infoBean);
 
         try {
             SQLConnector connector = new SQLConnector();
@@ -44,17 +47,17 @@ public class HandleLogin extends HttpServlet {
                 userBean.setPhonenum(resultSet.getString(userBean.PHONENUM));
                 userBean.setAuthority(resultSet.getBoolean(userBean.AUTHORITY));
                 userBean.setIntegral(resultSet.getInt(userBean.INTEGRAL));
-                userBean.setInfo("登录成功！");
+                infoBean.setInfo("登录成功！");
                 userBean.setState(true);
                 forward = "index-after.jsp";
             }
             else {
-                userBean.setInfo("用户名或密码错误，请确认后重新登录。");
+                infoBean.setInfo("用户名或密码错误，请确认后重新登录。");
                 forward = "login.jsp";
                 userBean.setState(false);
             }
         } catch (SQLException e) {
-            userBean.setInfo("数据库访问错误,请重试。");
+            infoBean.setInfo("数据库访问错误,请重试。");
             forward = "login.jsp";
             userBean.setState(false);
             e.printStackTrace();

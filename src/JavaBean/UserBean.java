@@ -15,7 +15,6 @@ public class UserBean {
     private String phonenum;
     private String email;
     private int integral;
-    private String info;
     private boolean state;
 
     public final short ID = 1;
@@ -89,14 +88,6 @@ public class UserBean {
 
     public void setIntegral(int integral) {
         this.integral = integral;
-    }
-
-    public String getInfo() {
-        return info;
-    }
-
-    public void setInfo(String info) {
-        this.info = info;
     }
 
     public boolean isState() {
