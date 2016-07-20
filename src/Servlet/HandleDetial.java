@@ -29,7 +29,11 @@ public class HandleDetial extends HttpServlet {
         String forward = null;
         CargoBean cargoBean = null;
         IndentBean indentBean = null;
-        InfoBean infoBean = (InfoBean)request.getSession().getAttribute("infoBean");
+        InfoBean infoBean = (InfoBean) request.getSession().getAttribute("infoBean");
+        if (infoBean == null) {
+            infoBean = new InfoBean();
+            request.getSession().setAttribute("infoBean", infoBean);
+        }
         for (Object bean: showListBean.getBeanSet()) {
             if (type.equals("cargo") && ((CargoBean)bean).getId() == id) {
                 cargoBean = (CargoBean)bean;

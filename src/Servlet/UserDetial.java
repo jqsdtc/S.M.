@@ -1,5 +1,9 @@
 package Servlet;
 
+import JavaBean.InfoBean;
+import JavaBean.UserBean;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,7 +20,22 @@ import java.io.IOException;
 @WebServlet(name = "UserDetial")
 public class UserDetial extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        UserBean userBean = (UserBean)request.getSession().getAttribute("userBean");
+        InfoBean infoBean = (InfoBean)request.getSession().getAttribute("infoBean");
+        if (infoBean == null) {
+            infoBean = new InfoBean();
+            request.getSession().setAttribute("infoBean", infoBean);
+        }
+        String forward = null;
+        if (userBean == null) {
+            forward = "";
+            infoBean.setInfo("您还未登陆，请登录后重试。");
+        }
+        else {
+            forward = "";
+        }
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher(forward);
+        requestDispatcher.forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
