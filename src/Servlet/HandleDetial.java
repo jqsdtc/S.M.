@@ -1,9 +1,6 @@
 package Servlet;
 
-import JavaBean.CargoBean;
-import JavaBean.IndentBean;
-import JavaBean.InfoBean;
-import JavaBean.ShowListBean;
+import JavaBean.*;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -28,7 +25,7 @@ public class HandleDetial extends HttpServlet {
         String type = request.getParameter("type");
         String forward = null;
         CargoBean cargoBean = null;
-        IndentBean indentBean = null;
+        IndentUnitBean indentUnitBean = null;
         InfoBean infoBean = (InfoBean) request.getSession().getAttribute("infoBean");
         if (infoBean == null) {
             infoBean = new InfoBean();
@@ -41,14 +38,14 @@ public class HandleDetial extends HttpServlet {
                 forward = "";
                 break;
             }
-            else if (type.equals("indent") && ((IndentBean)bean).getId() == id) {
-                indentBean = (IndentBean)bean;
-                request.getSession().setAttribute("indentBean", indentBean);
+            else if (type.equals("indent") && ((IndentUnitBean)bean).getId() == id) {
+                indentUnitBean = (IndentUnitBean)bean;
+                request.getSession().setAttribute("indentUnitBean", indentUnitBean);
                 forward = "";
                 break;
             }
         }
-        if (cargoBean == null && indentBean == null || forward == null) {
+        if (cargoBean == null && indentUnitBean == null || forward == null) {
             forward = "errorPage.jsp";
             if (type.equals("cargo"))
                 infoBean.setInfo("商品不存在。");

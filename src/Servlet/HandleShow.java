@@ -1,9 +1,6 @@
 package Servlet;
 
-import JavaBean.CargoBean;
-import JavaBean.IndentBean;
-import JavaBean.ShowListBean;
-import JavaBean.UserBean;
+import JavaBean.*;
 import Util.SQLConnector;
 import com.sun.rowset.CachedRowSetImpl;
 
@@ -116,13 +113,13 @@ public class HandleShow extends HttpServlet {
                     pageUnits.add(cargoBean);
                 }
                 else {
-                    IndentBean indentBean = new IndentBean();
-                    indentBean.setId(rowSet.getInt(indentBean.ID));
-                    indentBean.setCid(rowSet.getInt(indentBean.CID));
-                    indentBean.setUid(rowSet.getInt(indentBean.UID));
-                    indentBean.setDate(rowSet.getString(indentBean.DATE));
-                    indentBean.setQuantity(rowSet.getInt(indentBean.QUANTITY));
-                    pageUnits.add(indentBean);
+                    IndentUnitBean indentUnitBean = new IndentUnitBean();
+                    indentUnitBean.setId(rowSet.getInt(indentUnitBean.ID));
+                    indentUnitBean.setCid(rowSet.getInt(indentUnitBean.CID));
+                    indentUnitBean.setUid(rowSet.getInt(indentUnitBean.UID));
+                    indentUnitBean.setDate(rowSet.getString(indentUnitBean.DATE));
+                    indentUnitBean.setQuantity(rowSet.getInt(indentUnitBean.QUANTITY));
+                    pageUnits.add(indentUnitBean);
                 }
             }
             return pageUnits;
