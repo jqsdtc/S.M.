@@ -1,0 +1,109 @@
+.carContent{
+	width: 60%;
+	float: left;
+	margin-left: 80px;
+	margin-top: 50px;
+}
+
+.carContent p{
+	margin-bottom: 40px; 
+	font-size: 15px;
+}
+
+.carContent .car-head{
+	margin-bottom: 30px;
+	font-size: 22px;
+}
+
+.carContent .goodNo{
+	padding-top:30px; 
+	padding-bottom: 30px;
+	border-top: 1px #6f6f6f solid;
+	width: 100%;
+}
+
+#No2{
+	border-bottom: 1px #6f6f6f solid;
+}
+
+.carContent .goodInfo{
+	float: right;
+	margin-right: 400px;
+
+}
+
+.carContent .goodInfo p{
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+
+.carContent .goodNo .delete{
+	float: right;
+	margin-right: 30px;
+	margin-top:225px;
+}
+
+.carContent .goodNo .delete a{
+	color: #000;
+}
+
+.carContent .goodNo .delete a:hover{
+	color: red;
+}
+
+.goodList{
+	width: 33%;
+	float: right;
+	margin-right: 25px;
+	margin-top: 172px;
+	background-color: #1a1a1a;
+	height: 500px;
+	color: #fff;
+}
+
+.goodList .listTop{
+	height: 300px;
+	padding-left: 50px;
+	padding-top: 40px;
+	padding-right: 30px;
+	font-size: 18px;
+	border-bottom: 2px #fff solid;
+}
+
+.goodList .listTop p{
+	margin-top: 10px;
+}
+
+.goodList .listTop div{
+	height: 40px;
+	margin-top: 40px;
+}
+
+.goodList .l{
+	float: left;
+}
+
+.goodList .r{
+	float: right;
+}
+
+.goodList .listBottom{
+	padding-top: 40px;
+	padding-left: 50px;
+	padding-right: 30px;
+}
+
+.goodList .listBottom p{
+	font-size: 18px;
+}
+
+.goodList .listBottom button{
+	margin-top: 80px;
+	margin-left: 20px;
+	width: 280px;
+	height: 50px;
+	background-color: #4e644d;
+	font-size: 24px;
+	border: none;
+}

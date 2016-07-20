@@ -109,6 +109,7 @@ body {
     padding-left: 10px;
     padding-top:15px; 
     overflow: auto;
+    width: 100%;
 }
 
 #bottom li{
