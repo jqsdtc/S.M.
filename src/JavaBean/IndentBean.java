@@ -1,61 +1,39 @@
 package JavaBean;
 
+import java.util.ArrayList;
+
 /**
  * @Author: michael
- * @Date: 16-7-19 上午12:49
+ * @Date: 16-7-21 上午1:38
  * @Project: S.M.
  * @Package: JavaBean
  */
 public class IndentBean {
-    private int id;
-    private int uid;
-    private int cid;
-    private String date;
-    private int quantity;
+    ArrayList<CargoBean> indentUnitBeanList = null;
+    float priceAllCount;
+    boolean empty;
 
-    public final short ID = 1;
-    public final short UID = 2;
-    public final short CID = 3;
-    public final short DATE = 4;
-    public final short QUANTITY = 5;
-
-    public int getId() {
-        return id;
+    public float getPriceAllCount() {
+        return priceAllCount;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setPriceAllCount(float priceAllCount) {
+        this.priceAllCount = priceAllCount;
     }
 
-    public int getUid() {
-        return uid;
+    public ArrayList<CargoBean> getIndentUnitBeanList() {
+        return indentUnitBeanList;
     }
 
-    public void setUid(int uid) {
-        this.uid = uid;
+    public void setIndentUnitBeanList(ArrayList<CargoBean> indentUnitBeanList) {
+        this.indentUnitBeanList = indentUnitBeanList;
     }
 
-    public int getMid() {
-        return cid;
+    public boolean isEmpty() {
+        return empty;
     }
 
-    public void setMid(int mid) {
-        this.cid = mid;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setEmpty(boolean empty) {
+        this.empty = empty;
     }
 }

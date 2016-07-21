@@ -12,6 +12,7 @@ public class CargoBean {
     private int inventory;
     private float price;
     private short sort;
+    private int quantity;
 
     public final short ID = 1;
     public final short CARGONAME = 2;
@@ -62,5 +63,13 @@ public class CargoBean {
 
     public void setSort(short sort) {
         this.sort = sort;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }
